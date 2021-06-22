@@ -31,8 +31,13 @@ alias gbdel='grh && gsm && git branch -D @{-1}'
 __git_complete gdel _git_branch
 
 alias gdel='git branch -D'
+alias gdelold="git branch --format='%(refname:short) - %(committerdate:relative)' | egrep '\*|(month|months|year|years)' | xargs git branch -D"
+alias gdelrecent="git branch --format='%(refname:short) - %(committerdate:relative)' | egrep '\*|(week|weeks)' | xargs git branch -D"
 alias gs='git status'
 alias gl="git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30"
 alias gbr="git branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
 alias gsave="git add . && git commit -m"
 alias gpush="git push -u origin head"
+
+#http
+alias pfpr='open https://dev.azure.com/workplacedynamics/WPD/_git/Platform/pullrequests?_a=mine'
