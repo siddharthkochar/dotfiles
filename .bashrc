@@ -8,7 +8,6 @@ alias ....='cd ../../../..'
 alias pf='cd /d/work/energage/platform'
 alias twp='cd /d/work/energage/twp'
 alias ps='cd /d/work/energage/energage.storage'
-alias covid='cd /d/work/git/covid-vaccine-booking/src'
 
 #git
 alias gc='git checkout'
@@ -38,6 +37,3 @@ alias gl="git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C
 alias gbr="git branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
 alias gsave="git add . && git commit -m"
 alias gpush="git push -u origin head"
-
-#http
-alias pfpr='open https://dev.azure.com/workplacedynamics/WPD/_git/Platform/pullrequests?_a=mine'
