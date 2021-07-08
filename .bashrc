@@ -36,4 +36,4 @@ alias gs='git status'
 alias gl="git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30"
 alias gbr="git branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
 alias gsave="git add . && git commit -m"
-alias gpush="git push -u origin head"
+alias gpushkar="git push -u origin head"
