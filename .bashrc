@@ -11,7 +11,7 @@ alias ps='cd /d/work/energage/energage.storage'
 
 #git
 alias gc='git checkout'
-__git_complete gc _git_checkout
+ __git_complete gc _git_checkout
 
 alias gcb='git checkout -b'
 alias gcm='gc master && git pull'
@@ -36,4 +36,5 @@ alias gs='git status'
 alias gl="git log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30"
 alias gbr="git branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
 alias gsave="git add . && git commit -m"
-alias gpushkar="git push -u origin head"
+alias gpush="git push -u origin head"
+alias gpushkar="grh && git push -u origin head"
