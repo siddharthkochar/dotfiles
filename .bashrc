@@ -8,6 +8,7 @@ alias ....='cd ../../../..'
 alias pf='cd /d/work/energage/platform'
 alias twp='cd /d/work/energage/twp'
 alias ps='cd /d/work/energage/energage.storage'
+alias karma='cd /d/work/karma'
 
 #git
 alias gc='git checkout'
@@ -38,3 +39,11 @@ alias gbr="git branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:r
 alias gsave="git add . && git commit -m"
 alias gpush="git push -u origin head"
 alias gpushkar="grh && git push -u origin head"
+
+#kubectl
+alias k='kubectl'
+alias kgpo='k get pods'
+alias kgpoc='kgpo -o jsonpath={.spec.containers[*].name}'
+alias kcgc='k config get-contexts'
+alias kcuc='k config use-context'
+alias kl='k logs'
